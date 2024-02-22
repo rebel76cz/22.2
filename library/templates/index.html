@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+</head>
+<body>
+    <h1>Vítejte v knihovně</h1>
+    <h2>Seznam uživatelů</h2>
+    <ul>
+        {% for user in users %}
+            <li>{{ user }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Seznam knih</h2>
+    <ul>
+        {% for book in books %}
+            <li>{{ book }}</li>
+        {% endfor %}
+    </ul>
+    <ul>
+        <li><a href="/add_user">Přidat uživatele</a></li>
+        <li><a href="/add_book">Přidat knihu</a></li>
+    </ul>
+</body>
+</html>
